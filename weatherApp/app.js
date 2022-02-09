@@ -14,11 +14,11 @@ window.addEventListener("load",()=>{
 	{	
 		if(degree===0)
 		{
-			temperature.textContent=celcues+"C";
+			temperature.innerHTML=celcues+"<sup>o</sup>C";
 			degree=1;
 		}else
 		{
-			temperature.textContent=faranheit+"F";
+			temperature.innerHTML=faranheit+"<sup>o</sup>F";
 			degree=0;
 		}
 	});
@@ -34,7 +34,7 @@ window.addEventListener("load",()=>{
 			})
 			.then(data=>{
 				console.log(data);
-				temperature.textContent=data.current.temp_f+"F";
+				temperature.innerHTML=data.current.temp_f+"<sup>o</sup>F";
 				description.textContent=data.current.condition.text;
 				region.textContent=data.location.region;
 				icon.src="https:"+data.current.condition.icon;
