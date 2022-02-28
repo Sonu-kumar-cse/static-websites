@@ -26,8 +26,7 @@ body
 }
 .page 
 {
-	scroll
-	-snap-align: start;
+	scroll-snap-align: start;
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -199,13 +198,17 @@ body
 	text-align: center;
 }
 
-.education-page .education-content
+.education-page .education-content-container
 {
 	width: 100%;
 	height: calc(100% - 40px);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;	
+}
+.education-page .education-content
+{
+	width: auto;
 }
 .education-page .education-content table
 {

@@ -84,13 +84,7 @@
 .education-page .education-content
 {
 	overflow-x: auto;
-
-	width: auto;
-	height: auto;
-	display: flex;
-	padding: 0 30px;
-	align-items: center;
-	justify-content: center;
+	width: 80%;
 }
 .education-page .education-content table
 {
