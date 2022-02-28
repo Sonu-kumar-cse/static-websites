@@ -1,0 +1,128 @@
+.home-page .navbar .logo{
+	text-align: center;
+	width: 100%;
+}
+*
+{
+	box-sizing: border-box;
+}
+.navbar
+{
+	padding: 0 0;
+}
+.page 
+{
+	height: auto;
+}
+.home-page .navbar .menu
+{
+	display: none;
+}
+.home-page .content
+{
+	flex-direction: column;
+}
+.home-page .content .information *
+{
+	padding: 0;
+	width: auto;
+}
+.home-page .content .information
+{
+
+	margin: 40px 0 20px 0;
+	height: auto;
+	align-items: center;
+	padding-left: 0;
+	width: 100%;
+}
+
+.home-page .content .information .box
+{
+	margin: 10px 0;
+}
+.home-page .content .image-container
+{
+	padding: 20px;
+	margin-bottom:60px ;
+	width: calc(100% - 40px);
+}
+.home-page .content .image-container .image-box
+{
+	width: 100%;
+	height: auto;
+	border: 10px solid white;
+}
+.education-page
+{
+	padding-top: 40px;
+}
+.education-page .heading:after
+{
+	content: "";
+	display: block;
+	width: 200px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	border-radius: 10px;
+	transform: translateX(-50%);
+	border: 2px solid white;
+}
+.education-page .heading
+{
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.education-page .education-content
+{
+	overflow-x: auto;
+
+	width: auto;
+	height: auto;
+	display: flex;
+	padding: 0 30px;
+	align-items: center;
+	justify-content: center;
+}
+.education-page .education-content table
+{
+	font-size: 20px;
+	width: 100%;
+
+}
+
+.education-page .education-content table tr td
+{	
+	padding: 10px 20px;
+}
+
+.education-page .education-content table *
+{
+	width: 200px;
+}
+.education-page .education-content table tr td svg
+{
+	display: none;
+}
+
+
+.education-page .education-content table tr:nth-child(even)
+{
+	background: #aaa5;
+} 
+.education-page .education-content table tr td 
+{
+	position: relative;
+}
+.education-page .education-content table tr td p
+{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+
+}
+
+

@@ -1,0 +1,265 @@
+html
+{
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Consolas;
+	box-sizing: border-box;
+}/*
+body::-webkit-scrollbar {
+  display: none;
+}*/
+body
+{
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.container
+{
+	width: 100%;
+}
+.page 
+{
+	scroll
+	-snap-align: start;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	
+}
+.home-page
+{
+	background: linear-gradient(#FFCC33,#BFA554);
+}
+.education-page
+{
+	background: linear-gradient(#FF6734,#905642);
+}
+.bottom-image
+{
+	bottom: -5px;
+	position: absolute;
+	width: 100%;
+}
+.bottom-image img 
+{
+	object-fit: cover;
+	width: 100%;
+}
+.navbar .logo
+{
+
+	display: inline-block;
+	font-family: Comic Sans MS;
+}
+
+
+.navbar
+{
+	padding: 20px 30px;
+}
+.navbar .menu
+{
+	margin-top: 10px;
+	/*border: 1px solid red;*/
+	margin-right: 20px;
+	list-style: none;
+	float: right;
+	display: inline-block;
+}
+.navbar .menu .menu-item
+{
+	position: relative;
+	cursor: pointer;
+	margin: 0 20px;
+	display: inline-block;
+	font-size: 20px;
+
+}
+.navbar .menu .menu-item a
+{
+	text-decoration: none;
+}
+
+
+.navbar .menu .menu-item:hover span
+{
+	transform: scaleY(1);
+
+}
+.navbar .menu .menu-item span
+{
+	background: white;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 5px;
+	bottom: -10px;
+	left: 0;
+	transition: .5s;
+	transform: scaleY(0);
+
+}
+.home-page .content
+{
+	height: calc(100% - 87px);
+	display: flex;
+}
+.home-page .content .information
+{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	padding-left: 100px;
+}
+.home-page .content .image-container
+{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+.home-page .content .image-container .image-box
+{
+	position: relative;
+	border: 15px solid white;
+	width: 60%;
+	height: 70%;
+}
+
+.home-page .content .image-container .image-box:after
+{
+	content: "SONU KUMAR";
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	bottom: -50px;
+}
+
+.home-page .content .image-container .image-box img 
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.home-page .content .information p
+{
+	width: 80%;
+}
+.home-page .content .information *
+{
+
+	padding-left: 10px;
+}
+.home-page .content .information .box
+{
+
+	width: 70%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 10px;
+	border: 5px solid white;
+}
+
+.home-page .content .information h2 span
+{
+	color: black;
+}
+.education-page
+{
+	padding-top: 40px;
+}
+.education-page .heading:after
+{
+	content: "";
+	display: block;
+	width: 200px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	border-radius: 10px;
+	transform: translateX(-50%);
+	border: 2px solid white;
+}
+.education-page .heading
+{
+	position: relative;
+	text-align: center;
+}
+
+.education-page .education-content
+{
+	width: 100%;
+	height: calc(100% - 40px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.education-page .education-content table
+{
+	font-size: 20px;
+
+}
+
+.education-page .education-content table tr td
+{	
+	padding: 20px 60px;
+}
+
+.education-page .education-content table *
+{
+}
+.education-page .education-content table tr td svg
+{
+	height: 65px;
+	width: 65px;
+	position: relative;
+}
+
+
+.education-page .education-content table tr td svg circle
+{
+	height: 100px;
+	width: 100px;
+	transform: translate(2.5px,2.5px);	
+	fill:  none;
+	stroke: #000;
+	stroke-width: 5;
+	stroke-dasharray: 190;
+	stroke-dashoffset: 190;
+	stroke-linecap: round;
+}
+.education-page .education-content table tr td svg circle:nth-child(1)
+{
+	stroke-dashoffset: 0;
+	stroke: #aaa8;
+}
+.education-page .education-content table tr td svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(190 - (190 * var(--percent)) / 100);
+	stroke: #24ffcf;
+}
+.education-page .education-content table tr td 
+{
+	position: relative;
+}
+.education-page .education-content table tr td p
+{
+	position: absolute;
+	top: 38%;
+	left: 40%;
+}
+
+
