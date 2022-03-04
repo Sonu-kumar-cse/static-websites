@@ -57,7 +57,7 @@
 	width: 100%;
 	height: auto;
 	border: 10px solid white;
-}
+}	
 .education-page
 {
 	padding-top: 40px;
@@ -123,8 +123,7 @@
 .education-page .education-content table tr td p
 {
 	position: absolute;
-	top: 10%;
-	left: 10%;
+
 
 }
 .skills-page
