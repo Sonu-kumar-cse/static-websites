@@ -346,3 +346,80 @@ body
 	border-radius: 5px;
 	background: white;
 }
+
+
+/*project page styling*/
+
+
+.projects-page
+{
+	padding-top: 40px;
+	background: linear-gradient(#33FFF3,#479590);
+}
+.projects-page .heading:after
+{
+	content: "";
+	display: block;
+	width: 200px;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	border-radius: 10px;
+	transform: translateX(-50%);
+	border: 2px solid white;
+}
+.projects-page .heading
+{
+	position: relative;
+	text-align: center;
+}
+
+.projects-page .projects-container
+{
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: calc(100% - 80px);
+	display: flex;
+}
+.projects-page .projects-container .section
+{
+	width: 40%;
+}
+.projects-page .projects-container .section .block
+{
+	border-radius: 10px;
+	border: 1px solid white;
+	margin: 20px;
+	padding: 20px;
+	padding-left: 30px;
+
+}
+.projects-page .projects-container .section .block h2:after 
+{
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 50%;
+	border-bottom: 2px solid white;
+}
+.projects-page .projects-container .section .block h2 
+{
+	margin-bottom: 10px;
+	position: relative;
+}
+.projects-page .projects-container .section .block button
+{
+	outline: none;
+	margin-top: 20px;
+	background: none;
+	padding: 10px 20px;
+	border: 1px solid white;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.projects-page .projects-container .section .block button a 
+{
+	text-decoration: none;
+}

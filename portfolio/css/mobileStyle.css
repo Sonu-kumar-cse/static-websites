@@ -1,3 +1,8 @@
+html
+{
+	scroll-snap-type: none;
+
+}
 .home-page .navbar .logo{
 	text-align: center;
 	width: 100%;
@@ -128,7 +133,7 @@
 }
 .skills-page
 {
-	background: linear-gradient(#FF0033,#6A2B38);
+	padding-bottom: 50px;
 }
 .skills-page .heading:after
 {
@@ -153,15 +158,16 @@
 }
 .skills-page .skills-content
 {
+	align-items: center;
 	margin-top: 50px;
-	padding: 20px 100px;
+	padding: 20px 0px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 .skills-page .skills-content .section
 {
-	width: 90%;
+	width: 60%;
 }
 .skills-page .skills-content .section h2:after
 {
@@ -195,6 +201,7 @@
 }
 .skills-page .skills-content .section ul li .outer
 {
+	display: block;
 	overflow: hidden;
 	width: 200px;
 	border-radius: 5px;
@@ -208,4 +215,29 @@
 	height: 100%;
 	border-radius: 5px;
 	background: white;
+}
+
+/*project page styling*/
+
+
+.projects-page .heading
+{
+	margin-bottom: 30px;
+
+}
+
+.projects-page .projects-container
+{
+
+	height: auto;
+
+	flex-direction: column;
+}
+.projects-page .projects-container .section
+{
+	width: 80%;
+}
+.projects-page .projects-container .section .block h2:after 
+{
+	width: 60%;
 }
