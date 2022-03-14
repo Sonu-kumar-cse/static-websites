@@ -14,4 +14,13 @@ window.addEventListener("load",()=>{
 	setTimeout(typingAnimation,200);
 
 });
-console.log("hello")
+
+let sendButton=document.getElementById("send-button");
+sendButton.addEventListener("click",(e)=>
+{
+	let subject=document.getElementById("message-subject")
+	let body=document.getElementById("message-body")
+	sendButton.href+=subject.value+"&body="+body.value;
+
+	console.log(sendButton.href)
+})

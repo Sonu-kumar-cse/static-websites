@@ -9,6 +9,13 @@
 	</style>
 </head>
 <body>
-	<div class="box">Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptatem?</div>
+	<a id="mail" href="mailto:mohanmohanmohankumarmohan@gmail.com?subject=Hello&body=how are you">send mail</a>
+	<script>
+		let mail=document.getElementById("mail")
+		mail.addEventListener('click',()=>{
+			mail.href="mailto:mohanmohanmohankumarmohan@gmail.com";
+			mail.href+="?subject=hi"
+		})
+	</script>
 </body>	
 </html>
